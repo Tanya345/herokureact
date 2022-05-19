@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body{
+  background-color: #3e2a98;
+}
+.navbar{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index:1
+}
+.navbar-light .navbar-toggler{
+  border: 2px solid white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.offcanvas-end{
+  width:314px;
+}
+.offcanvas{
+  background: #cdc7c7;
+}
+.offcanvas-header{
+  justify-content: end;
+}
+.offcanvas-body span:hover{
+color: darkcyan
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home_movies{
   display: flex;
+  align-items: center;
   flex-direction: column;
+}
+.bannersDiv{
+  /* height:75vh; */
+  position: relative;
+  top:0;
+  display: flex;
+  width: 100vw;
+  animation: linear infinite alternate;
+  animation-name: run;
+  animation-duration: 5s;
+}
+.bannersDiv img{
+  /* height:inherit; */
+  width: inherit;
+}
+
+.dotsDiv{
+  width: 100vw;
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.dot{
+  font-weight: 900;
+    cursor: pointer;
+    font-size: 1.6rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* latest page css */
+.card{
+  width: 16rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* login page css */
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 580px;
+  border-radius: 10px;
+}
+.btn{
+   color: #0d6efd;
+   border: 2px solid #0d6efd;;
+}
+.btn:hover{
+  background-color: #0d6efd;
+  color:white
+}
+
+/* play Movie css */
+.movieBannerDiv{
+  height: 80vh;
+  width:100vw;
+  position: relative;
+}
+
+.movieBannerImg{
+  width: inherit;
+  height: inherit;
+}
+.playMovieBtnDiv{
+  position: absolute;
+  top:453px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
